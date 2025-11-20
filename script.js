@@ -1,4 +1,5 @@
 function firstNonRepeatedChar(str) {
+	if(!str) return null;
  // Write your code here
 	 for(let i=0; i<str.length-1; i+=2){
 		 let first = str[i]
@@ -10,5 +11,5 @@ function firstNonRepeatedChar(str) {
 	return null
 	
 }
-// const input = prompt("Enter a string");
+const input = prompt("Enter a string");
 alert(firstNonRepeatedChar(input)); 
