@@ -3,11 +3,11 @@ function firstNonRepeatedChar(str) {
  // Write your code here
 	let hMap= {}
 
-	for(let ch in str){
+	for(let ch of str){
 		hMap[ch] = (hMap[ch] || 0) + 1
 	}
 
-	for(let ch in str){
+	for(let ch of str){
 		if(hMap[ch] == 1){
 			return ch
 		}
